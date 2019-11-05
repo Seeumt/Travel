@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+<!--    <img src="./assets/logo.png">-->
     <router-view/>
     <!--显示当前路由地址所对应的内容-->
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'App' //这个是干嘛的呢
+  name: 'App' //这个name是干嘛的呢
 }
 </script>
 
