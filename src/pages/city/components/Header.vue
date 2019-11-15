@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    城市选择
+      城市选择
     <router-link to="/">
       <div class="iconfont header-back">&#xe624;</div>
     </router-link>
@@ -18,18 +18,18 @@
   .header
     position relative
     overflow hidden
-    height $headerHeight
-    line-heigth $headerHeight
+    height .86rem
+    line-heigth .86rem
     text-align center
     color white
     background $bgColor
     font-size .32rem
     .header-back
       position: absolute
-      top: 0
+      top: 10px
       left: 0
-      width: .64rem
+      width: .54rem
       text-align: center
       font-size: .4rem
-      color: #fff
+      color: white
 </style>
