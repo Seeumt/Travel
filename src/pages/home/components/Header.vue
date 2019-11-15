@@ -7,10 +7,12 @@
       <span class="iconfont">&#xe632;</span>
       请输入城市/景点/游玩主题
     </div>
+    <router-link to="/city">
     <div class="header-right">
       {{city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -28,7 +30,7 @@
   /*在样式里import 要加个波浪线*/
   .header
     display:flex
-    line-height:.86rem
+    line-height:$headerHeight
     background:$bgColor
     color:#fff
     .header-left
@@ -51,6 +53,7 @@
       width: 1.24rem
       float: right
       text-align:center
+      color white
       .arrow-icon
         margin-left :-.04rem
         font-size:.24rem
