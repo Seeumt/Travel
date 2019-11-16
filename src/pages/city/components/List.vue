@@ -54,7 +54,6 @@
                     const element = this.$refs[this.letter][0];
                     this.scroll.scrollToElement(element)//需要一个DOM元素
                 }
-                console.log(this.letter);
             }
         }
     }
