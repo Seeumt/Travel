@@ -47,12 +47,13 @@
                         clearTimeout(this.timer);
                     }
                     this.timer = setTimeout(() => {
-                    const touchY = event.touches[0].clientY - 74;
-                    const index = Math.floor((touchY - this.startY) / 20);
-                    if (index >= 0 && index < this.letters.length) {
-                        this.$emit('change',this.letters[index])
-                    }
-                  },16);
+                        const touchY = event.touches[0].clientY - 74;
+                        const index = Math.floor((touchY - this.startY) / 20);
+                        if (index >= 0 && index < this.letters.length) {
+                            this.$emit('change', this.letters[index])
+                        }
+                    }, 16);
+
                 }
             },
             handlerTouchEnd() {

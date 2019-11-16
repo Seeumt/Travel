@@ -100,4 +100,5 @@
       .item
         line-height: .76rem
         padding-left: .2rem
+        text-align left
 </style>
