@@ -2,8 +2,9 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-    <city-list :cities="cities" :hot="hotCities"></city-list>
-    <city-alphabet :cities="cities"></city-alphabet>
+    <city-list :cities="cities" :hot="hotCities" :letter="letter"></city-list>
+                            <!--    绑定一个监听事件-->
+    <city-alphabet :cities="cities" @change="handLetterChange"></city-alphabet>
   </div>
 </template>
 
@@ -25,6 +26,7 @@
         return {
             cities: {},
             hotCities:[],
+            letter:''
         }
       },
     methods: {
@@ -35,14 +37,18 @@
         getCityInfoSucc(res) {
             res=res.data;
             if (res.ret && res.data) {
-                const data=res.data
-                this.cities = data.cities
+                const data=res.data;
+                this.cities = data.cities;
                 this.hotCities = data.hotCities;
             }
+        },
+        handLetterChange(letter) {
+            //要把这个letter给子组件传递 通过属性的方式
+            this.letter = letter;
         }
     },
       mounted() {
-        this.getCityInfo()
+          this.getCityInfo()
       }
   }
 </script>

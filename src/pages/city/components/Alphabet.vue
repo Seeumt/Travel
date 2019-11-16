@@ -1,6 +1,6 @@
 <template>
     <ul class="list">
-      <li class="item" v-for="(city,key) in cities" :key="key">
+      <li class="item" v-for="(city,key) in cities" :key="key" @click="handleLetterClick">
         {{key}}
       </li>
     </ul>
@@ -11,6 +11,12 @@
         name: "CityAlphabet",
         props:{
             cities:Object
+        },
+        methods:{
+            handleLetterClick(event) {
+                //向外触发事件  事件的名字 change, 事件的内容 event.target.innerText 在根组件City.Vue中监听这个事件
+                this.$emit('change',event.target.innerText);
+            }
         }
     }
 </script>
