@@ -26,27 +26,9 @@
             list: Array
         },
         data() {
-            return {
-                recommendList: [
-                    {
-                        id: '0001',
-                        title: '大连圣亚海洋公园',
-                        desc: '浪漫大连，浪漫之旅',
-                        imgUrl:'https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/e86b37fef48851353d6f5ae0090cc974.jpg'
-                    },
-                    {
-                        id: '0002',
-                        title: '大连圣亚海洋公园',
-                        desc: '浪漫大连，浪漫之旅',
-                        imgUrl:'https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/e86b37fef48851353d6f5ae0090cc974.jpg'
-                    },
-                    {
-                        id: '0003',
-                        title: '大连圣亚海洋公园',
-                        desc: '浪漫大连，浪漫之旅',
-                        imgUrl:'https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/e86b37fef48851353d6f5ae0090cc974.jpg'
-                    }]
-            }
+          return{
+
+          }
         }
     }
 </script>

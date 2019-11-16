@@ -69,9 +69,9 @@
     .item-title
       line-height .54rem
       font-size .32rem
-      ellipsis()
+      ellipse()
     .icon-desc
       line-height .4rem
       color salmon
-      ellipsis()
+      ellipse()
 </style>
