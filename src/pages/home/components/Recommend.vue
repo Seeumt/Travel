@@ -38,7 +38,7 @@
   .title
     margin-top .2rem
     line-height .8rem
-    background fuchsia
+    background orange
     text-indent .2rem
 
   .item
