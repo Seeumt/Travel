@@ -12,6 +12,7 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+      // component: ()=>import('../pages/city/City')
     },
     {
       path: '/city',
